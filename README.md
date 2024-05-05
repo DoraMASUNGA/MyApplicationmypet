@@ -61,7 +61,10 @@ I chose the specific apps out of nostalgia from my childhood. Images that are ve
 
 
 Code:
-First Page: 
+
+First Page
+
+
 import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
