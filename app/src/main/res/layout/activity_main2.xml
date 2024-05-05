@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFE"
+    android:backgroundTint="#FEFEFE"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="114dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="40dp"
+        android:background="#3949AB"
+        android:text="FEED"
+        app:icon="@drawable/red_welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sleepButton"
+        android:layout_width="125dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="28dp"
+        android:background="#3949AB"
+        android:text="SLEEP"
+        app:icon="@drawable/red_welcome"
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="122dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="32dp"
+        android:background="#5E35B1"
+        android:text="CLEAN"
+        app:icon="@drawable/red_welcome"
+        app:layout_constraintBottom_toTopOf="@+id/feedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#3949AB" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="44dp"
+        android:background="#3949AB"
+        android:text="PLAY"
+        app:icon="@drawable/red_welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="401dp"
+        android:layout_height="483dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/sleepButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/toodles_is_now_asleep" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happiness Scale"
+        android:textColor="#6A1B9A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="488dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
